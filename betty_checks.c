@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <unistd.h>
 
 /**
  * main - code example
@@ -7,6 +7,6 @@
 
 int main(void)
 {
-	printf("This is a beautiful code\n");
+	write(1, "This is a beautiful code\n", 26);
 	return (0);
 }
